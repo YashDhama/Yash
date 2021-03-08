@@ -38,5 +38,28 @@ body {
   <p>This website strictly prohibits any violent contents,It is just for the entertainment purpose!</p>
 </div>
 
+
+
+<p>click on the below button</p>
+<button onclick="typeWriter()">instruction</button>
+
+<p id="demo"></p>
+
+<script>
+var i = 0;
+var txt = 'Hello world...this is Yash Dhama the owner of this website!...Since the website is still under development so you can contact me to add your data on my website for free.scroll down you will be able to find a google response sheet,fill that sheet as soon as possible to grab the offer earlier from others!';
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+
+
+
 </body>
 </html>
